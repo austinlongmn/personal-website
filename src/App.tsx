@@ -10,6 +10,9 @@ function App() {
         <p>
           Austin's React App - now with wings!
         </p>
+        <p>
+          This is a new feature branch!
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
