@@ -4,26 +4,26 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+		<div className="App">
+			<header className="App-header">
+				<img src={logo} className="App-logo" alt="logo" />
+				<p>
+					Welcome to Austin's new personal website!<br/>It is still under
+          development. Check back soon for updates!
+				</p>
         <p>
-          Austin's React App - now with wings!
+          This site will be built with React.
         </p>
-        <p>
-          This is a new feature branch!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+				<a
+					className="App-link"
+					href="https://reactjs.org"
+					target="_blank"
+					rel="noopener noreferrer">
+					Learn React
+				</a>
+			</header>
+		</div>
+	);
 }
 
 export default App;
