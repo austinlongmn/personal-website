@@ -9,7 +9,7 @@ function App() {
 				<img src={logo} className="App-logo" alt="logo" />
 				<p>
 					Welcome to Austin's new personal website!<br/>It is still under
-          development. Check back soon for updates! Version 3.0
+          development. Check back soon for updates!
 				</p>
         <p>
           This site will be built with React.
