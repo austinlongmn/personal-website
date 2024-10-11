@@ -10,7 +10,7 @@ function App() {
         <p>
           Welcome to Austin's new personal website!
           <br />
-          It is still under development. Check back soon for updates!
+          It is still under development.
         </p>
         <p>This site will be built with React.</p>
         <a
