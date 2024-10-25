@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.8",
@@ -23,8 +24,5 @@
     "eslint-config-next": "14.2.15",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3"
-  }
-  "scripts": {
-    "preinstall": "npx only-allow pnpm"
   }
 }
