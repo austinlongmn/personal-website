@@ -1,9 +1,10 @@
-import { Button } from "@nextui-org/react";
+import {  } from "@nextui-org/react";
 
 export default function Home() {
   return (
     <div>
-      <Button>Click me</Button>
+      <h1 className="mb-2 text-4xl">austinlong.dev</h1>
+      <h2>Christ-centered software development</h2>
     </div>
   );
 }

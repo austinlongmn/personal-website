@@ -1,11 +1,15 @@
-import { Navbar, NavbarBrand } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/react";
+import Link from "next/link";
 
 export default function MainNavBar() {
   return (
-    <Navbar>
+    <Navbar isBordered>
       <NavbarBrand>
-        <a href="/">austinlong.dev</a>
+        <Link href="/"><em>austinlong.dev</em></Link>
       </NavbarBrand>
+      <NavbarContent justify="end">
+        <Link href="/projects">Projects</Link>
+      </NavbarContent>
     </Navbar>
   );
 }
