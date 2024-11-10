@@ -40,12 +40,6 @@ jobs:
             build-cache-${{ github.ref }}-
             build-cache-
 
-      - name: Install firebase-tools
-        run: pnpm add -g firebase-tools
-
-      - name: Add pnpm global bin to PATH
-        run: echo "${{ runner.tool_cache }}/pnpm/global/5/node_modules/.bin" >> $GITHUB_PATH
-
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
