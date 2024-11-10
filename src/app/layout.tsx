@@ -15,9 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="dark">
+      <body>
         <Providers>
-          <div className="dark">
+          <div>
             <TopBar />
             <div className="">
               {children}
