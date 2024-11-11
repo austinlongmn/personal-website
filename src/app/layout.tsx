@@ -19,9 +19,9 @@ export default function RootLayout({
         <Providers>
           <div>
             <TopBar />
-            <div className="">
+            <main className="container mx-auto max-w-5xl pt-2 md:pt-10 px-2 md:px-6">
               {children}
-            </div>
+            </main>
           </div>
         </Providers>
       </body>
