@@ -17,7 +17,7 @@ export default function MainNavBar() {
           austinlong.dev
         </Link>
       </NavbarBrand>
-      <NavbarContent>
+      <NavbarContent className="hidden sm:flex" justify="end">
         <NavbarItem>
           <Link href="/projects">Projects</Link>
         </NavbarItem>

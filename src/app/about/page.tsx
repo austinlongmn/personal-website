@@ -4,8 +4,7 @@ export default function About() {
   return (
     <div>
       <h1>About</h1>
-      <p>Hello, </p>
-      <p>Hi</p>
+      <p>Hello, my name is Austin.</p>
       <h2>Languages</h2>
       <p>Here are the programming languages I can write code in:</p>
       <div className="grid grid-cols-2 gap-4 py-4">
