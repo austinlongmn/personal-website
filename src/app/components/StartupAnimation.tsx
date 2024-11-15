@@ -1,12 +1,16 @@
 "use client";
 import { useEffect, useState } from "react";
 
-export default function StartupAnimation() {
+const text = "austinlong.dev";
+const typingDelay = 75;
+const returnDelay = 1000;
+
+export const completionTime = typingDelay * text.length;
+
+export function StartupAnimation() {
   const [currentString, setCurrentString] = useState("");
   const [currentIdx, setCurrentIdx] = useState(0);
   const text = "austinlong.dev";
-  const typingDelay = 75;
-  const blinkDelay = 500;
 
   useEffect(() => {
     if (currentIdx < text.length) {
@@ -19,22 +23,20 @@ export default function StartupAnimation() {
 
       return () => clearTimeout(timeout);
     }
-  }, [currentIdx, typingDelay, text, currentString]);
+  }, [currentIdx, text, currentString]);
 
   useEffect(() => {
-    if (currentIdx >= text.length) {
+    if (currentIdx == text.length) {
       const timeout = setTimeout(() => {
+        console.log("timeout")
         setCurrentString(prev => {
-          if (prev.endsWith("_")) {
-            return prev.substring(0, prev.length - 1);
-          } else {
-            return prev + "_";
-          }
+          return prev.substring(0, currentIdx)
         });
-      }, blinkDelay);
+        setCurrentIdx(prev => prev + 1)
+      }, returnDelay);
 
       return () => clearTimeout(timeout);
     }
-  }, [currentIdx, blinkDelay, currentString]);
+  }, [currentIdx, currentString]);
   return currentString;
 }
