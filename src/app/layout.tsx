@@ -35,11 +35,11 @@ export default function RootLayout({
       className={`${jetbrainsMonoFont.variable} ${exo2Font.variable}`}>
       <body style={{}}>
         <Providers>
-          <div>
+          <div className="flex flex-col min-h-screen">
             <TopBar />
-            <div className="container mx-auto max-w-5xl pt-2 md:pt-10 px-2 md:px-6 ">
-              <main>{children}</main>
-              <Footer />
+            <div className="container flex flex-col flex-grow mx-auto max-w-5xl pt-2 md:pt-10 px-2 md:px-6 ">
+              <main className="flex-grow">{children}</main>
+              <Footer className="py-6"/>
             </div>
           </div>
         </Providers>
